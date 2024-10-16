@@ -4,7 +4,7 @@ import requests
 # Constants
 BASE_API_URL = "https://langflow-langflow.hf.space"
 FLOW_ID = "f1af67e8-e879-40c4-97c8-219f4877a70d"
-ENDPOINT = "" # You can set a specific endpoint name in the flow settings
+ENDPOINT = "aboutme" # You can set a specific endpoint name in the flow settings
 
 
 # Function to run the flow
