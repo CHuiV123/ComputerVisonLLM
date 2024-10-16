@@ -24,6 +24,10 @@ def run_flow(message: str,
         "input_type": "chat",
     }
 
+    response = run_flow(
+        message=args.message,
+        endpoint=args.endpoint)
+
     response = requests.post(api_url, json=payload)
     return response.json()
 
