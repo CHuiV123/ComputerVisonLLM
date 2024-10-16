@@ -8,15 +8,14 @@ ENDPOINT = "" # You can set a specific endpoint name in the flow settings
 
 
 # Function to run the flow
-def run_flow(message: str,
-  endpoint: str) -> dict:
+def run_flow(message: str) -> dict:
     """
     Run a flow with a given message.
 
     :param message: The message to send to the flow
     :return: The JSON response from the flow
     """
-    api_url = f"{BASE_API_URL}/api/v1/run/{endpoint}"
+    api_url = f"{BASE_API_URL}/api/v1/run/{ENDPOINT or FLOW_ID}"
 
     payload = {
         "input_value": message,
@@ -24,12 +23,9 @@ def run_flow(message: str,
         "input_type": "chat",
     }
 
-    response = run_flow(
-        message=args.message,
-        endpoint=args.endpoint)
-
     response = requests.post(api_url, json=payload)
     return response.json()
+
 
 # Function to extract the desired message
 def extract_message(response: dict) -> str:
