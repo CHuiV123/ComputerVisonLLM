@@ -9,11 +9,7 @@ ENDPOINT = "aboutme" # You can set a specific endpoint name in the flow settings
 
 # Function to run the flow
 def run_flow(message: str,
-  endpoint: str,
-  output_type: str = "chat",
-  input_type: str = "chat",
-  tweaks: Optional[dict] = None,
-  api_key: Optional[str] = None) -> dict:
+  endpoint: str) -> dict:
     """
     Run a flow with a given message.
 
