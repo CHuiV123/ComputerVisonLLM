@@ -14,7 +14,7 @@ def run_flow(message: str) -> dict:
     :param message: The message to send to the flow
     :return: The JSON response from the flow
     """
-    api_url = f"{BASE_API_URL}/api/v1/run/{ENDPOINT or FLOW_ID}"
+    api_url = f"{BASE_API_URL}/{endpoint}"
 
     payload = {
         "input_value": message,
