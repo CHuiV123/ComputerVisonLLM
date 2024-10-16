@@ -71,7 +71,7 @@ def main():
             message_placeholder = st.empty()  # Placeholder for assistant response
             with st.spinner("Thinking..."):
                 # Fetch response from Langflow
-                assistant_response = extract_message(run_flow(query,endpoint))
+                assistant_response = extract_message(run_flow(query))
                 message_placeholder.write(assistant_response)
 
         # Add assistant response to session state
