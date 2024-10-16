@@ -4,7 +4,7 @@ import requests
 # Constants
 BASE_API_URL = "https://langflow-langflowview.hf.space/api/v1/run"
 FLOW_ID = "133238f4-eae0-4427-a9d3-15ce3946c74f"
-ENDPOINT = "" # You can set a specific endpoint name in the flow settings
+ENDPOINT = "aboutme" # The endpoint name of the flow
 
 # Function to run the flow
 def run_flow(message: str) -> dict:
