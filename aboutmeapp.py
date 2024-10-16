@@ -2,9 +2,9 @@ import streamlit as st
 import requests
 
 # Constants
-BASE_API_URL = "https://langflow-langflow.hf.space"
-FLOW_ID = "f1af67e8-e879-40c4-97c8-219f4877a70d"
-ENDPOINT = "aboutme" # You can set a specific endpoint name in the flow settings
+BASE_API_URL = "http://127.0.0.1:7860"
+FLOW_ID = "262a5797-7306-41b5-a0a4-6ae7b92ebee8"
+ENDPOINT = "" # You can set a specific endpoint name in the flow settings
 
 
 # Function to run the flow
