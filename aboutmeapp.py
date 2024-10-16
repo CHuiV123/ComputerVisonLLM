@@ -2,9 +2,10 @@ import streamlit as st
 import requests
 
 # Constants
-BASE_API_URL = "https://langflow-langflowview.hf.space/api/v1/run"
-FLOW_ID = "133238f4-eae0-4427-a9d3-15ce3946c74f"
-ENDPOINT = "aboutme" # The endpoint name of the flow
+BASE_API_URL = "https://langflow-langflow.hf.space"
+FLOW_ID = "f1af67e8-e879-40c4-97c8-219f4877a70d"
+ENDPOINT = "" # You can set a specific endpoint name in the flow settings
+
 
 # Function to run the flow
 def run_flow(message: str) -> dict:
@@ -14,7 +15,7 @@ def run_flow(message: str) -> dict:
     :param message: The message to send to the flow
     :return: The JSON response from the flow
     """
-    api_url = f"{BASE_API_URL}/{endpoint}"
+    api_url = f"{BASE_API_URL}/api/v1/run/{endpoint}"
 
     payload = {
         "input_value": message,
