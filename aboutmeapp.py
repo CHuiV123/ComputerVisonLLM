@@ -80,12 +80,14 @@ def main():
     
     with st.sidebar: 
         # File uploader for image
-        uploaded_file = st.file_uploader("Upload an image (JPG, PNG)", type=["jpg", "jpeg", "png"])
+        #uploaded_file = st.file_uploader("Upload an image (JPG, PNG)", type=["jpg", "jpeg", "png"])
+        enable = st.checkbox("Enable camera")
+        picture = st.camera_input("Take a picture", disabled=not enable)
         json_full = [] 
     
-        if uploaded_file is not None:
+        if picture is not None:
             # Convert the uploaded file to an image
-            image = Image.open(uploaded_file)
+            image = Image.open(picture)
             st.image(image, caption="Uploaded Image", use_column_width=True)
             
             # Perform inference on the uploaded image
