@@ -5,6 +5,7 @@ import json
 import logging
 from typing import Optional
 from ultralytics import YOLO
+from ultralytics import YOLOWorld
 from PIL import Image
 
 #%%
@@ -95,7 +96,7 @@ def main():
             st.image(image, caption="Uploaded Image", use_column_width=True)
             
             # Perform inference on the uploaded image
-            model= YOLO("yolo11n.pt")
+            model= YOLO("yolo8x-worldv2")
             results = [] 
             if results is not None: 
                 results = model(image)  # Use the uploaded image for inference                
