@@ -96,7 +96,7 @@ def main():
             st.image(image, caption="Uploaded Image", use_column_width=True)
             
             # Perform inference on the uploaded image
-            model= YOLO("yolo8x-worldv2")
+            model= YOLO("yolov8x-worldv2")
             results = [] 
             if results is not None: 
                 results = model(image)  # Use the uploaded image for inference                
