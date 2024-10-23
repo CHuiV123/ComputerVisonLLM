@@ -20,7 +20,7 @@ TWEAKS = {
   "TextInput-4VR8w": {},
   "Memory-fov4u": {},
   "Prompt-uqVIy": {},
-  "ChatInput-6nMm3": {{"chat_value": "<chat_input>"}}
+  "ChatInput-6nMm3": {}
 }
 
 
