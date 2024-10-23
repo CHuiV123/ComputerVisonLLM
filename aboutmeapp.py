@@ -10,8 +10,8 @@ from PIL import Image
 #%%
 
 # Constants
-BASE_API_URL = "http://68.183.143.199:7861"
-FLOW_ID = "060365f6-e9af-47b0-a022-f1d7ea853132"
+BASE_API_URL = " https://5e3b-175-136-235-145.ngrok-free.app"
+FLOW_ID = "c9617c76-b838-40e9-9944-d25656ec6908"
 ENDPOINT = "" # You can set a specific endpoint name in the flow settings
 TWEAKS = {
   "ChatOutput-RYRQA": {},
