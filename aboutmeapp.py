@@ -159,9 +159,9 @@ def main():
             }
         )
         
-        if results is not None:         
+        #if results is not None:         
         #[Optional] Show detection result
-            st.image(results[0].plot())
+            #st.image(results[0].plot())
 
 if __name__ == "__main__":
     main()
