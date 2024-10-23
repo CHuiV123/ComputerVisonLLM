@@ -20,7 +20,7 @@ TWEAKS = {
   "TextInput-4VR8w": {},
   "Memory-fov4u": {},
   "Prompt-uqVIy": {},
-  "ChatInput-6nMm3": {}
+  "ChatInput-6nMm3": {{"chat_value": "<chat_input>"}}
 }
 
 
@@ -80,6 +80,7 @@ def extract_message(response: dict) -> str:
 # Function to run the flow
 def main():
     st.title("Computer Vision + LLM 🤖")
+    st.write("Please capture an image first before you start asking question."
     
     with st.sidebar: 
         # File uploader for image
