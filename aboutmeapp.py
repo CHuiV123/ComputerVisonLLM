@@ -17,7 +17,10 @@ TWEAKS = {
   "ChatOutput-RYRQA": {},
   "Prompt-6Idet": {},
   "OpenAIModel-bVC7D": {},
-  "TextInput-4VR8w": {}
+  "TextInput-4VR8w": {},
+  "Memory-fov4u": {},
+  "Prompt-uqVIy": {},
+  "ChatInput-6nMm3": {}
 }
 
 
