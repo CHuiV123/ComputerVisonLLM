@@ -1,5 +1,4 @@
-pip --upgrade
-Python==3.11
+pip==24.2
 ultralytics
 
 
