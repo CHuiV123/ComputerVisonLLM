@@ -80,7 +80,7 @@ def extract_message(response: dict) -> str:
 # Function to run the flow
 def main():
     st.title("Computer Vision + LLM 🤖")
-    st.write("Please capture an image first before you start asking question.")
+    st.write("🢀Please capture an image first before you start asking question.")
     
     with st.sidebar: 
         # File uploader for image
