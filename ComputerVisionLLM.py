@@ -86,7 +86,7 @@ def main():
     with st.sidebar:
         # File uploader for image
         #uploaded_file = st.file_uploader("Upload an image (JPG, PNG)", type=["jpg", "jpeg", "png"])
-        st.write("Please enable the camera. You can switch the camera from front camera to back camera if you are using your phone."
+        st.write("Please enable the camera. You can switch the camera from front camera to back camera if you are using your phone.")
         enable = st.checkbox("Enable camera")
         picture = st.camera_input("Take a picture", disabled=not enable)
         json_full = [] 
