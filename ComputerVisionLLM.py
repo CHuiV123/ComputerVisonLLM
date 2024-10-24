@@ -4,7 +4,7 @@ import requests
 import json
 import logging
 from typing import Optional
-#from ultralytics import YOLO
+from ultralytics import YOLO
 from ultralytics import YOLOWorld
 from PIL import Image
 
@@ -15,13 +15,13 @@ BASE_API_URL = "http://68.183.143.199:7860"
 FLOW_ID = "060365f6-e9af-47b0-a022-f1d7ea853132"
 ENDPOINT = "" # You can set a specific endpoint name in the flow settings
 TWEAKS = {
-  "ChatOutput-RYRQA": {},
-  "Prompt-6Idet": {},
-  "OpenAIModel-bVC7D": {},
-  "TextInput-4VR8w": {},
-  "Memory-fov4u": {},
-  "Prompt-uqVIy": {},
-  "ChatInput-6nMm3": {}
+  "ChatOutput-Tfdxu": {},
+  "Prompt-Pt2Wc": {},
+  "OpenAIModel-BmzJ5": {},
+  "TextInput-M45by": {},
+  "Memory-RAwe2": {},
+  "Prompt-XxBlc": {},
+  "ChatInput-ne99J": {}
 }
 
 
@@ -119,7 +119,7 @@ def main():
     
     #text_input = st.text_input(detect)
     #st.write(json_full) #cross check detection result
-    TWEAKS["TextInput-4VR8w"]["input_value"] = json_full
+    TWEAKS["TextInput-M45by"]["input_value"] = json_full
     
 
     # Initialize session state for chat history
