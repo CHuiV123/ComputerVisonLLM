@@ -84,6 +84,7 @@ def main():
     st.write("🢀Please capture an image first before you start asking question.")
     
     with st.sidebar: 
+      st.write("Please enable the camera. You can switch the camera from front camera to back camera if you are using your phone."
         # File uploader for image
         #uploaded_file = st.file_uploader("Upload an image (JPG, PNG)", type=["jpg", "jpeg", "png"])
         enable = st.checkbox("Enable camera")
